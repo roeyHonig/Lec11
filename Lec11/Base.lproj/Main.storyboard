@@ -24,11 +24,17 @@
                                     <action selector="play:" destination="t7L-O3-x2t" eventType="touchUpInside" id="wOe-M1-V8m"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rey-ED-Iuk" customClass="MyButton" customModule="Lec11" customModuleProvider="target">
+                                <rect key="frame" x="16" y="80" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="O5h-Jz-2Sr" firstAttribute="bottom" secondItem="qTx-91-kom" secondAttribute="bottom" constant="16" id="I9q-ya-7jc"/>
+                            <constraint firstItem="rey-ED-Iuk" firstAttribute="leading" secondItem="O5h-Jz-2Sr" secondAttribute="leading" constant="16" id="SvD-mB-9fI"/>
                             <constraint firstItem="O5h-Jz-2Sr" firstAttribute="trailing" secondItem="qTx-91-kom" secondAttribute="trailing" constant="16" id="VjV-g4-2sJ"/>
+                            <constraint firstItem="rey-ED-Iuk" firstAttribute="top" secondItem="O5h-Jz-2Sr" secondAttribute="top" constant="16" id="s18-vU-dY4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O5h-Jz-2Sr"/>
                     </view>

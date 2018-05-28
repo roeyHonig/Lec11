@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVKit
 
 class PlayViewController: UIViewController {
 
@@ -14,8 +15,23 @@ class PlayViewController: UIViewController {
         // include a video
         // import AVKit
         // url for the video
-        // instantiate an object of AVPlayer
+        guard let url = Bundle.main.url(forResource: "vid", withExtension: "mp4") else { return  }
         
+       
+        // instantiate an object of AVPlayer
+         let player = AVPlayer(url:url)
+        
+        // init AVPLayer ViewController
+        let VideoVC = AVPlayerViewController()
+        
+        // videoVc -> Player  // will give us all the coll buttons like play \  stop
+        VideoVC.player = player
+        
+        //present the AVPlayerViewController
+        present(VideoVC, animated: true) {
+            // code that we will add...
+            player.play()
+        }
         //
     }
     
