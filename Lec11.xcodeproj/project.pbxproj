@@ -13,6 +13,8 @@
 		6DF3337520BBD67200BE1FF0 /* Lec11.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6DF3337320BBD67200BE1FF0 /* Lec11.xcdatamodeld */; };
 		6DF3337720BBD67200BE1FF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DF3337620BBD67200BE1FF0 /* Assets.xcassets */; };
 		6DF3337A20BBD67200BE1FF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF3337820BBD67200BE1FF0 /* LaunchScreen.storyboard */; };
+		6DF3338220BBE6AD00BE1FF0 /* vid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6DF3338120BBE6AD00BE1FF0 /* vid.mp4 */; };
+		6DF3338420BBEF4600BE1FF0 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF3338320BBEF4600BE1FF0 /* PlayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		6DF3337620BBD67200BE1FF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DF3337920BBD67200BE1FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DF3337B20BBD67200BE1FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DF3338120BBE6AD00BE1FF0 /* vid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = vid.mp4; sourceTree = SOURCE_ROOT; };
+		6DF3338320BBEF4600BE1FF0 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		6DF3336B20BBD67200BE1FF0 /* Lec11 */ = {
 			isa = PBXGroup;
 			children = (
+				6DF3338120BBE6AD00BE1FF0 /* vid.mp4 */,
 				6DF3336C20BBD67200BE1FF0 /* AppDelegate.swift */,
 				6DF3336E20BBD67200BE1FF0 /* ViewController.swift */,
 				6DF3337020BBD67200BE1FF0 /* Main.storyboard */,
@@ -63,6 +68,7 @@
 				6DF3337820BBD67200BE1FF0 /* LaunchScreen.storyboard */,
 				6DF3337B20BBD67200BE1FF0 /* Info.plist */,
 				6DF3337320BBD67200BE1FF0 /* Lec11.xcdatamodeld */,
+				6DF3338320BBEF4600BE1FF0 /* PlayViewController.swift */,
 			);
 			path = Lec11;
 			sourceTree = "<group>";
@@ -127,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DF3337A20BBD67200BE1FF0 /* LaunchScreen.storyboard in Resources */,
+				6DF3338220BBE6AD00BE1FF0 /* vid.mp4 in Resources */,
 				6DF3337720BBD67200BE1FF0 /* Assets.xcassets in Resources */,
 				6DF3337220BBD67200BE1FF0 /* Main.storyboard in Resources */,
 			);
@@ -139,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DF3338420BBEF4600BE1FF0 /* PlayViewController.swift in Sources */,
 				6DF3336F20BBD67200BE1FF0 /* ViewController.swift in Sources */,
 				6DF3337520BBD67200BE1FF0 /* Lec11.xcdatamodeld in Sources */,
 				6DF3336D20BBD67200BE1FF0 /* AppDelegate.swift in Sources */,
@@ -279,7 +287,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GA3LC47ZM3;
 				INFOPLIST_FILE = Lec11/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = student.roey.honig.Lec11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,7 +303,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GA3LC47ZM3;
 				INFOPLIST_FILE = Lec11/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = student.roey.honig.Lec11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
