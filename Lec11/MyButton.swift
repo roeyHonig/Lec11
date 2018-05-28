@@ -15,7 +15,7 @@ class MyButton: UIButton {
     //many times we've avoided the init with optionals and life-cycle hooks: will move to superView
     // so we can override the constractor, but don't forgt to call super
     
-    // this is a constractor from the xml
+    // this is a constractor from the xml, meaning the storyboard, by connecting the correct MyButton class in the attributes
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -34,7 +34,13 @@ class MyButton: UIButton {
     
     func customize(){
         // customize the button
-        setTitle("FaceBook", for: .normal)    }
+        setTitle("FaceBook", for: .normal)
+        layer.cornerRadius = 10
+        layer.borderWidth = 2
+        layer.borderColor = UIColor.cyan.cgColor
+        clipsToBounds = true
+        
+    }
     
     
     /*
